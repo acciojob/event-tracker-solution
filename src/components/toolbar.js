@@ -28,20 +28,20 @@ class CustomToolbar extends Component {
         let { localizer: { messages }, label } = this.props;
         return(
             <div className="rbc-toolbar">
-                <span id="prev" className="rbc-btn-group">
+                <span className="rbc-btn-group">
                     <button type="button" className="btn btn-control" onClick={this.navigate.bind(null, navigate.PREVIOUS)}><i className="fa fa-arrow-left"></i> Prev</button>
                 </span>
-                <span id="next" className="rbc-btn-group">
+                <span className="rbc-btn-group">
                     <button type="button" className="btn btn-control" onClick={this.navigate.bind(null, navigate.NEXT)}>Next <i className="fa fa-arrow-right"></i></button>
                 </span>
                 <span className="rbc-toolbar-label">{label}</span>
-                <span id="all" className="rbc-btn-group">
+                <span className="rbc-btn-group">
                     <button type="button" className="btn btn-control" onClick={(e) => this.onClickAllEvents()}>All</button>
                 </span>
-                <span id="past" className="rbc-btn-group">
+                <span className="rbc-btn-group">
                     <button type="button" className="btn btn-past" onClick={(e) => this.onClickPastEvents()}>Past</button>
                 </span>
-                <span id="upcoming" className="rbc-btn-group">
+                <span className="rbc-btn-group">
                     <button type="button" className="btn btn-upcoming" onClick={(e) => this.onClickUpcomingEvents()}>Upcoming</button>
                 </span>
             </div>
